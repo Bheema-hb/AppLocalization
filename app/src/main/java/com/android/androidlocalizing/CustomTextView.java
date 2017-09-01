@@ -26,11 +26,11 @@ public class CustomTextView extends android.support.v7.widget.AppCompatTextView 
 
         // Load attributes
         final TypedArray typedArray = getContext().getTheme().obtainStyledAttributes(
-                attrs, R.styleable.LocalizationAttributes, defStyle, 0);
+                attrs, R.styleable.LocAttributes, defStyle, 0);
 
         // get the locText value that might be set in the xml
         String localizedString = typedArray.getString(
-                R.styleable.LocalizationAttributes_locText);
+                R.styleable.LocAttributes_locText);
 
         typedArray.recycle();
 
